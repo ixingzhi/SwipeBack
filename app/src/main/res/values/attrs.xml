@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题栏自定义属性-->
+    <declare-styleable name="TitleBar">
+        <attr name="tbBackImage" format="reference" />
+        <attr name="tbBackText" format="string" />
+        <attr name="tbBackTextColor" format="color" />
+        <attr name="tbTitleText" format="string" />
+        <attr name="tbTitleTextColor" format="color" />
+        <attr name="tbMenuImage" format="reference" />
+        <attr name="tbMenuText" format="string" />
+        <attr name="tbMenuTextColor" format="color" />
+        <attr name="tbBackgroundColor" format="color" />
+        <attr name="tbDividerVisibility">
+            <enum name="visible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="tbBackVisibility">
+            <enum name="visible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <!--侧滑返回-->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+</resources>

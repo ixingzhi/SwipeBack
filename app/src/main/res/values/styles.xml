@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_base_bg6</item>
+        <item name="colorPrimaryDark">@color/color_base_bg6</item>
+        <item name="colorAccent">@color/color_base_bg4</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_base_theme_bg</item>
+    </style>
+
+    <!-- 沉浸式状态栏，透明主题，侧滑关闭页面 -->
+    <style name="BaseThemeSwipeBack" parent="BaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--  全屏显示  -->
+    <style name="BaseThemeFullscreen" parent="BaseTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/ic_shadow_left</item>
+        <item name="shadow_right">@drawable/ic_shadow_right</item>
+        <item name="shadow_bottom">@drawable/ic_shadow_bottom</item>
+    </style>
+
+</resources>
