@@ -9,7 +9,7 @@
 
     <!-- Xml CopyWriter -->
     <string name="text_demo_one_description">状态栏、标题栏背景色白色，状态栏文字黑色</string>
-    <string name="text_demo_two_description">状态栏、标题栏背景色黑色，文字白色</string>
+    <string name="text_demo_two_description">状态栏、标题栏背景色黑色，状态栏文字白色</string>
     <string name="text_demo_three_description">隐藏状态栏，沉浸式显示</string>
 
 </resources>

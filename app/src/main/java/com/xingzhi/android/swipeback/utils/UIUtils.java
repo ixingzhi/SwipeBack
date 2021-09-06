@@ -28,7 +28,7 @@ public class UIUtils {
         return (int) (pxValue / fontScale + 0.5f);
     }
 
-    public static DisplayMetrics getDisplayMetrics(Context context) {
+    private static DisplayMetrics getDisplayMetrics(Context context) {
         return context.getResources().getDisplayMetrics();
     }
 

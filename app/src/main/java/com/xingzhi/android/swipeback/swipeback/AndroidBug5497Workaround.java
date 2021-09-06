@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 
-import com.xingzhi.android.swipeback.utils.NavigationBarUtils;
+import com.xingzhi.android.swipeback.utils.ScreenUtils;
 
 
 /**
@@ -41,7 +41,7 @@ public class AndroidBug5497Workaround {
     private void possiblyResizeChildOfContent() {
         int usableHeightNow = computeUsableHeight();
         if (usableHeightNow != usableHeightPrevious) {
-            int usableHeightSansKeyboard = mChildOfContent.getRootView().getHeight() - NavigationBarUtils.getNavigationBarHeightIfRoom(mActivity);
+            int usableHeightSansKeyboard = mChildOfContent.getRootView().getHeight() - ScreenUtils.getNavigationBarHeightIfRoom(mActivity);
             int heightDifference = usableHeightSansKeyboard - usableHeightNow;
             if (heightDifference > (usableHeightSansKeyboard / 4)) {
                 // keyboard probably just became visible

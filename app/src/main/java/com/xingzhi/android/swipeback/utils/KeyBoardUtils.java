@@ -91,7 +91,7 @@ public class KeyBoardUtils {
         activity.getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
         // 考虑到虚拟导航栏的情况（虚拟导航栏情况下：screenHeight = rect.bottom + 虚拟导航栏高度）
         // 选取 screenHeight * 2 / 3 进行判断
-        int navigationBarHeight = (NavigationBarUtils.getNavigationBarHeightIfRoom(activity));
+        int navigationBarHeight = (ScreenUtils.getNavigationBarHeightIfRoom(activity));
 
         return (screenHeight - navigationBarHeight) * 2 / 3 > rect.bottom;
     }
